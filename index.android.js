@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
 import { Container, Header, Title, Button, Left, Right, Body, Icon } from 'native-base';
+import App from './app/containers/app';
 
 export default class marvelousVo extends Component {
   render() {
@@ -26,4 +27,4 @@ export default class marvelousVo extends Component {
   }
 }
 
-AppRegistry.registerComponent('marvelousVo', () => marvelousVo);
+AppRegistry.registerComponent('marvelousVo', () => App);
