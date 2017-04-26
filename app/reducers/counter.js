@@ -1,7 +1,8 @@
 import * as types from '../actions/actionTypes';
 
 const initialState = {
-  count: 0
+  count: 0,
+  titleToolbar: 'Bienvenido'
 };
 
 export default function counter(state = initialState, action = {}) {

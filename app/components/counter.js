@@ -20,7 +20,6 @@ export default class Counter extends Component {
 
   render() {
     const { counter, increment, decrement } = this.props;
-
     return (
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>{counter}</Text>
