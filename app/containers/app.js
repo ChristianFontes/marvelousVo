@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Provider } from 'react-redux';
 import { store } from './store';
-import Main from './main';
+import Main from './routers';
 
 export default class App extends Component {
   render() {
