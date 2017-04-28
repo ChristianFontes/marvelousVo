@@ -20,7 +20,6 @@ export default class Auth extends Component {
   }
 
   render() {
-    console.log('dashboard ', this.props);
     const { history } = this.props;
     return (
       <Container>
