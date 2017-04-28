@@ -2,8 +2,9 @@ import * as types from '../actions/actionTypes';
 
 const initialState = {
   auth: false,
-  name_button: 'Iniciar Sesion',
-  message: null
+  message: '',
+  email: '',
+  password: ''
 };
 
 export default function auth(state = initialState, action = {}) {
@@ -22,6 +23,16 @@ export default function auth(state = initialState, action = {}) {
       return {
         ...state,
         message: state.message = action.payload
+      };
+    case types.SET_EMAIL:
+      return {
+        ...state,
+        email: state.email = action.payload
+      };
+    case types.SET_PASSWORD:
+      return {
+        ...state,
+        password: state.password = action.payload
       };
     default:
       return state;

@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import { Item, Label, Input } from 'native-base';
 
-export default class LoginMessage extends Component {
+export default class LabelLogin extends Component {
     render() {
-      const { loginMessage } = this.props;
+      const { label, password, setInput } = this.props;
         return (
           <Item inlineLabel>
-              <Label>Username</Label>
-              <Input />
+              <Label>{label}</Label>
+              <Input
+                secureTextEntry={password}
+                onChangeText={(text) => {
+                  setInput(text);
+                }} />
           </Item>
         );
     }

@@ -1,7 +1,7 @@
 import { auth } from './constants';
 
-export function loginByEmail (login, loginMessage, history) {
-   auth.signInWithEmailAndPassword("prueba@gmail.com", "12345")
+export function loginByEmail (login, loginMessage, history, email, password) {
+   auth.signInWithEmailAndPassword(email, password)
      .then(function(firebaseUser) {
          login(); //Action de authActions
          history.replace('/dashboard'); //Ir a Dashboard

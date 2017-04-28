@@ -18,3 +18,17 @@ export function loginMessage(message) {
     payload: message
   };
 }
+
+export function setEmail(email) {
+  return {
+    type: types.SET_EMAIL,
+    payload: email
+  };
+}
+
+export function setPassword(password) {
+  return {
+    type: types.SET_PASSWORD,
+    payload: password
+  };
+}

@@ -8,6 +8,7 @@ import { Container } from 'native-base';
 import Logo from '../components/logo';
 import ButtonAuth from '../components/buttonAuth';
 import LoginMessage from '../components/loginMessage';
+import LabelLogin from '../components/labelLogin';
 
 class Auth extends Component {
   constructor(props) {
@@ -19,8 +20,10 @@ class Auth extends Component {
     return (
       <Container>
         <Logo />
-        <ButtonAuth history={history} title={state.name_button} {...actions}/>
-        <LoginMessage loginMessage={state.message} />
+        <LabelLogin label={'Email:'} setInput={ actions.setEmail }/>
+        <LabelLogin label={'Password:'} password={true} setInput={ actions.setPassword }/>
+        <ButtonAuth history={history} title={'Iniciar Sesion'} {...actions} email={state.email} password={state.password}/>
+        <LoginMessage loginMessage={state.message}/>
       </Container>
     );
   }
