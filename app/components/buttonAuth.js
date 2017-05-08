@@ -1,29 +1,28 @@
 import React, { Component } from 'react';
-import { Container, Content, Button, Icon, Text } from 'native-base';
+import { Button, Icon, Text } from 'native-base';
+import { StyleSheet, View } from 'react-native';
 import { loginByEmail } from '../firebase/auth';
 
+const styles = StyleSheet.create({
+  botton: {
+    alignItems:'center',
+    marginTop: 30,
+    marginBottom: 30,
+    paddingLeft: 15,
+    paddingRight: 15
+  }
+});
+
 export default class ButtonAuth extends Component {
-    _checkData(login, loginMessage, history, email, password) {
-      if (email && password) {
-        loginByEmail(login, loginMessage, history, email, password);
-      }
-      else if (email.length == 0) {
-        loginMessage('El campo de Email es Requerido');
-      }
-      else if (password.length == 0) {
-        loginMessage('El campo de Password es Requerido');
-      }
-      else if (email.length == 0 && password.length == 0) {
-        loginMessage('Los campos Email y Password son Requeridos');
-      }
-    }
     render() {
       const { history, title, login, loginMessage, email, password } = this.props;
         return (
-          <Button iconLeft onPress={() => this._checkData(login, loginMessage, history, email, password) }>
+          <View style={styles.botton}>
+          <Button block warning iconLeft onPress={() => loginByEmail(login, loginMessage, history, email, password)}>
               <Icon name='home' />
               <Text>{title}</Text>
           </Button>
+          </View>
         );
     }
 }
