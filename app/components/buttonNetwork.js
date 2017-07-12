@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, Icon, Text } from 'native-base';
 import { StyleSheet, View } from 'react-native';
 import { authByGoogle } from '../firebase/auth';
+import { GoogleSignin } from 'react-native-google-signin';
 
 const styles = StyleSheet.create({
   botton: {
@@ -13,6 +14,27 @@ const styles = StyleSheet.create({
 });
 
 export default class ButtonNetwork extends Component {
+    componentWillMount() {
+      this._setupGoogleSignin();
+    }
+    
+    async _setupGoogleSignin() {
+      try {
+        await GoogleSignin.hasPlayServices({ autoResolve: true });
+        await GoogleSignin.configure({
+          webClientId: '615670358203-bs16lansc40713koei4obvt9cdmh4blq.apps.googleusercontent.com',
+          offlineAccess: true,
+          forceConsentPrompt: true
+        });
+
+        const user = await GoogleSignin.currentUserAsync();
+        console.log(user);
+      }
+      catch(err) {
+        console.log("Play services error", err.code, err.message);
+      }
+    }
+
     _buttonRender(network, icon, color) {
       if (color == 'info') {
         return(

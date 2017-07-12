@@ -69,6 +69,11 @@
 		236DC17EECF5412C869D80DB /* Skia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A84886811BB423E85B111B1 /* Skia.ttf */; };
 		BF9F70D28F9541EE81FA90F6 /* Times New Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64B08C86730141F980EA4F97 /* Times New Roman.ttf */; };
 		00D8F67CA1004E9899C982D3 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94E56C4727824940A97DEC80 /* Zocial.ttf */; };
+		876BC6F003794124917D373E /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF92D87123344AC9D47C83F /* libRNGoogleSignin.a */; };
+		2BC4E76B114B483A9C363E00 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 605531E4BC964B658BCAA375 /* libz.tbd */; };
+		7BE819837B824C5E85591EBE /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AADBEDE6BF64149862BFBED /* SafariServices.framework */; };
+		2F8B31B86DE84D5387D95875 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5FDAEB2EF84A6D954FA0BF /* SystemConfiguration.framework */; };
+		8F2A58F1834741939FD49A3E /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844E972C2F894C18969CAD88 /* AddressBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -322,6 +327,12 @@
 		7A84886811BB423E85B111B1 /* Skia.ttf */ = {isa = PBXFileReference; name = "Skia.ttf"; path = "../node_modules/native-base/Fonts/Skia.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		64B08C86730141F980EA4F97 /* Times New Roman.ttf */ = {isa = PBXFileReference; name = "Times New Roman.ttf"; path = "../node_modules/native-base/Fonts/Times New Roman.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		94E56C4727824940A97DEC80 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5F522EAA117A4D9BAFB3C7F9 /* RNGoogleSignin.xcodeproj */ = {isa = PBXFileReference; name = "RNGoogleSignin.xcodeproj"; path = "../node_modules/react-native-google-signin/ios/RNGoogleSignin.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		EDF92D87123344AC9D47C83F /* libRNGoogleSignin.a */ = {isa = PBXFileReference; name = "libRNGoogleSignin.a"; path = "libRNGoogleSignin.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		605531E4BC964B658BCAA375 /* libz.tbd */ = {isa = PBXFileReference; name = "libz.tbd"; path = "usr/lib/libz.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
+		0AADBEDE6BF64149862BFBED /* SafariServices.framework */ = {isa = PBXFileReference; name = "SafariServices.framework"; path = "System/Library/Frameworks/SafariServices.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		0C5FDAEB2EF84A6D954FA0BF /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		844E972C2F894C18969CAD88 /* AddressBook.framework */ = {isa = PBXFileReference; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,6 +359,11 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				876BC6F003794124917D373E /* libRNGoogleSignin.a in Frameworks */,
+				2BC4E76B114B483A9C363E00 /* libz.tbd in Frameworks */,
+				7BE819837B824C5E85591EBE /* SafariServices.framework in Frameworks */,
+				2F8B31B86DE84D5387D95875 /* SystemConfiguration.framework in Frameworks */,
+				8F2A58F1834741939FD49A3E /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +530,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+				5F522EAA117A4D9BAFB3C7F9 /* RNGoogleSignin.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -535,6 +552,7 @@
 				00E356EF1AD99517003FC87E /* marvelousVoTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				3CF4C1FD5AEF4A348AB002DE /* Resources */,
+				8C2386248AC74F35BFEEB49B /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -590,6 +608,18 @@
 				94E56C4727824940A97DEC80 /* Zocial.ttf */,
 			);
 			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
+		8C2386248AC74F35BFEEB49B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				605531E4BC964B658BCAA375 /* libz.tbd */,
+				0AADBEDE6BF64149862BFBED /* SafariServices.framework */,
+				0C5FDAEB2EF84A6D954FA0BF /* SystemConfiguration.framework */,
+				844E972C2F894C18969CAD88 /* AddressBook.framework */,
+			);
+			name = Frameworks;
 			path = "";
 			sourceTree = "<group>";
 		};
@@ -1116,6 +1146,14 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marvelousVo.app/marvelousVo";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+				);
 			};
 			name = Debug;
 		};
@@ -1133,6 +1171,14 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marvelousVo.app/marvelousVo";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+				);
 			};
 			name = Release;
 		};
@@ -1151,6 +1197,10 @@
 				);
 				PRODUCT_NAME = marvelousVo;
 				VERSIONING_SYSTEM = "apple-generic";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+				);
 			};
 			name = Debug;
 		};
@@ -1168,6 +1218,10 @@
 				);
 				PRODUCT_NAME = marvelousVo;
 				VERSIONING_SYSTEM = "apple-generic";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+				);
 			};
 			name = Release;
 		};
@@ -1194,6 +1248,14 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+				);
 			};
 			name = Debug;
 		};
@@ -1220,6 +1282,14 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+				);
 			};
 			name = Release;
 		};
@@ -1241,6 +1311,10 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marvelousVo-tvOS.app/marvelousVo-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 			};
 			name = Debug;
 		};
@@ -1262,6 +1336,10 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marvelousVo-tvOS.app/marvelousVo-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 			};
 			name = Release;
 		};
